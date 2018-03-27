@@ -1,0 +1,31 @@
+
+#include <chrono>
+#include <iostream>
+#include <random>
+using namespace std;
+/* 
+void Random(){
+  int seed=chrono::steady_clock::now().time_since_epoch().count();
+  default_random_engine e(seed);
+  uniform_int_distribution<int> u(0,10);
+  cout<<e()%6<<endl;
+  cout<<e()%6<<endl;
+  cout<<e()%51<<endl<<endl;
+  cout<<u(e)<<endl;
+  cout<<u(e)<<endl;
+}*/
+
+int main() {
+	int seed = chrono::steady_clock::now().time_since_epoch().count();
+	default_random_engine en(seed);
+	uniform_int_distribution<int> u(39, 47);
+	int numb;
+
+	while (numb != 42) {
+		numb = u(en);
+		if (numb != 42) {
+			cout << numb << endl;
+		}
+	}
+	cout << "Found the answer 42" << endl;
+}
