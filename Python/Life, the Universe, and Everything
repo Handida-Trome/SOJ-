@@ -1,0 +1,10 @@
+import random
+
+number=random.randint(1,99)
+
+while number!=42:
+  number=random.randint(1,99)
+  if number!=42:
+    print(number)
+
+print('Found the number 42')
