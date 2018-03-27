@@ -1,0 +1,21 @@
+import java.util.Random;
+class Main{
+  public static int randRange(int start, int finish){
+    return new Random().nextInt(finish+1-start)+start;
+  }
+  //Overloading method randRange to take single parameter 'finish'.
+  public static int randRange(int finish){
+    return randRange(0,finish);
+  }
+  
+  public static void main(String[] args){
+    int numb=randRange(1,99);
+    while(numb!=42){
+      numb=randRange(1,99);
+      if(numb!=42){
+        System.out.println(numb);
+      }
+    }
+    System.out.println("Found the number 42");
+  }
+}
