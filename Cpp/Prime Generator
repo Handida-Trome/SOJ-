@@ -18,17 +18,12 @@ int main(){
     cout<<endl<<endl<<"----------------Test case ";
     
     /*if t was entered 10, t would be 9 because of t-- in while condition.
-    so t=9, i=10(i equaled to t before t-- while condition).
-    hence 9+2-10==11-10==1.*/
+    so t=9, i=10(i equaled to t before t-- while condition). Hence 9+2-10==11-10==1.*/
     cout<<t+2-i<<"----------------"<<endl;
     
     i-=2;
-    /*without i-=2, if i is as t was before loop (10), then in next 
-    loop t=8, 8+2-10==10-10=0.
-    if i is i--, 8+2-9==10-9==1.
-    if i is i-=2, 8+2-8==10-8==2
-    and so on...*/
-    
+    /*without i-=2, if i is as t was before loop (10), then in next loop t=8, 8+2-10==10-10=0.
+    if i is i--, 8+2-9==10-9==1. if i is i-=2, 8+2-8==10-8==2 and so on...*/
     
     cout<<"Enter lower bound: ";
     cin>>l; 
